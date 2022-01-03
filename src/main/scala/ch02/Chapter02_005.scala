@@ -2,7 +2,7 @@ package ch02
 
 import java.util.Scanner
 
-object Chapter02_003 {
+object Chapter02_005 {
   def main(args: Array[String]): Unit = {
     val sc = new Scanner(System.in)
     val N = sc.nextInt()
@@ -10,6 +10,6 @@ object Chapter02_003 {
     (1 to N).foreach { _ =>
       result = result + sc.nextInt()
     }
-    println(result)
+    println(result % 100)
   }
 }
